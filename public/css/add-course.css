@@ -1,0 +1,44 @@
+* {
+    font-family: IRANSans_FaNam;
+}
+
+.mt-15{
+    margin-top: 15px !important;
+}
+
+.input-holder input,
+.input-holder textarea {
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #c2c2c2;
+    margin: 15px 0;
+    padding: 13px;
+    width: 60%;
+}
+
+.btn-submit {
+    background: #03dac6;
+    border: none !important;
+}
+
+.form-holder {
+    direction: rtl;
+    width: 25%;
+    padding-top: 10px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 29px;
+    margin-top: 100px;
+    background: linear-gradient(45deg, #7e2cf2, #b47fff);
+    color: white;
+    font-family: iransans;
+}
+
+.msg-success {
+    width: max-content;
+    color: #353535;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background: #49e782;
+    border-radius: 5px;
+}

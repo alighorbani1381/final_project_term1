@@ -8,6 +8,23 @@
     <title>ویرایش محصول</title>
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     <link rel="stylesheet" href="{{ asset('css/add-course.css') }}">
+    <script src="{{ asset('js/tinymce.min.js') }}" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#product-description',
+            directionality: 'rtl',
+            language_url : '{{ asset('js/langs/fa.js') }}',
+            language : "fa",
+            plugins: [
+                'a11ychecker', 'advlist', 'advcode', 'advtable', 'autolink', 'checklist', 'export',
+                'lists', 'link', 'image', 'charmap', 'preview', 'anchor', 'searchreplace', 'visualblocks',
+                'powerpaste', 'fullscreen', 'formatpainter', 'insertdatetime', 'media', 'table', 'help', 'wordcount'
+            ],
+            toolbar: 'undo redo | formatpainter casechange blocks | bold italic backcolor | ' +
+                'alignleft aligncenter alignright alignjustify | ' +
+                'bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
+        });
+    </script>
 </head>
 
 <body>
@@ -25,7 +42,7 @@
             </div>
             <div class="input-holder">
                 <label style="vertical-align: 6rem;">توضیحات</label>
-                <textarea required placeholder="توضیحات محصول را وارد کنید ...." name="description" id="" cols="30"
+                <textarea required placeholder="توضیحات محصول را وارد کنید ...." name="description" id="product-description" cols="30"
                     rows="5">{{ $course->description }}</textarea>
             </div>
             <div class="input-holder">

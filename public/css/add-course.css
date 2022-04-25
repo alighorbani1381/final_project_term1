@@ -2,18 +2,22 @@
     font-family: IRANSans_FaNam;
 }
 
-.mt-15{
+.mt-15 {
     margin-top: 15px !important;
 }
 
 .input-holder input,
 .input-holder textarea {
-    border-radius: 20px;
-    border: none;
+    border-radius: 8px;
     border: 1px solid #c2c2c2;
     margin: 15px 0;
     padding: 13px;
     width: 60%;
+}
+
+
+.input-holder textarea {
+    height: 300px !important;
 }
 
 .btn-submit {
@@ -23,7 +27,7 @@
 
 .form-holder {
     direction: rtl;
-    width: 25%;
+    width: 50%;
     padding-top: 10px;
     text-align: center;
     margin: 0 auto;

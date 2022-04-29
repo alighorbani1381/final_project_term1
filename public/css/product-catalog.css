@@ -1,0 +1,102 @@
+
+:root {
+  --nice-black: #303030;
+}
+
+* {
+  direction: rtl;
+  font-family: IRANSans_FaNam;
+}
+
+.logo {
+  vertical-align: -20px;
+  height: 60px;
+}
+
+.logo-holder {
+  display: inline-block;
+  width: max-content;
+}
+
+.logo-banner {
+  width: 35%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.nav-rightmenu ul {
+  list-style: none;
+}
+
+.nav-rightmenu {
+  display: inline-flex;
+}
+
+.nav-leftmenu {
+  display: inline-flex;
+}
+
+.nav-rightmenu li {
+  display: inline-flex;
+  margin-right: 15px;
+  color: var(--nice-black);
+}
+
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  margin: auto;
+}
+
+.btn-primary {
+  background: #71c3ee;
+  color: #ffffff;
+}
+
+.cards-holder {
+  display: flex;
+  padding: 110px;
+  justify-content: space-around;
+  position: relative;
+}
+
+.line {
+  height: 3px;
+  top: 50px;
+  background: #f3f3f3;
+  position: absolute;
+  width: 82%;
+}
+
+.card {
+  text-decoration: none;
+  color: var(--nice-black);
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 0 10px #00000029 !important;
+  border-radius: 5px;
+  min-height: 415px;
+  width: 285px !important;
+}
+
+.card__content {
+  padding: 25px;
+}
+
+.card__image {
+  width: inherit;
+}
+
+.card__content__description {
+  margin-top: 20px;
+  color: #8c8c8c;
+}
